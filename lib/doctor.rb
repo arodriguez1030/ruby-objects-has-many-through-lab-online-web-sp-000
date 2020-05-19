@@ -19,6 +19,7 @@ class Doctor
   def patients
     appointments.map do |patient|
       appointments.patient == self
+    end
   end
   
   def new_appointment(date, patient)
